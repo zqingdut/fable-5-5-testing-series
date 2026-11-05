@@ -1,11 +1,14 @@
 // Fable 5.5 Testing Series — waterfall front-end.
 // Data source: data/cases.json (single source of truth, auto-maintained).
+// Layout: JS-managed flex columns. Expanding a card's prompt only grows
+// that card's own column — no global reflow, no width jumps.
 (function () {
   var grid = document.getElementById('grid');
   var countEl = document.getElementById('count');
   var searchEl = document.getElementById('search');
   var activeCat = 'all';
   var allCases = [];
+  var lastColCount = 0;
 
   function esc(s) {
     return String(s == null ? '' : s)
@@ -23,7 +26,14 @@
     return s.indexOf('$') >= 0 ? s : '$' + s;
   }
 
-  function card(item) {
+  function colCount() {
+    var w = grid.clientWidth || window.innerWidth;
+    if (w >= 1000) return 3;
+    if (w >= 640) return 2;
+    return 1;
+  }
+
+  function cardHTML(item) {
     var metaBits = [esc(item.author), esc(item.created_at)];
     if (item.duration_sec) metaBits.push(esc(item.duration_sec) + 's');
     if (item.work_time) metaBits.push('耗时 ' + esc(item.work_time));
@@ -50,7 +60,11 @@
       '<div class="meta">' + metaBits.join(' · ') + '</div>' +
       '<p class="summary">' + esc(item.summary) + '</p>' +
       (chips ? '<div class="chips">' + chips + '</div>' : '') +
-      '<details><summary>查看 Prompt</summary><pre>' + esc(item.prompt || '未公开') + '</pre></details>' +
+      '<button class="prompt-toggle" type="button" aria-expanded="false">' +
+      '<span class="arrow">▸</span>查看 Prompt</button>' +
+      '<div class="prompt-wrap"><div class="prompt-inner"><pre>' +
+      esc(item.prompt || '未公开') +
+      '</pre></div></div>' +
       '<div class="links">' +
       '<a href="' + esc(item.tweet_url) + '" target="_blank" rel="noopener">🔗 原推文</a>' +
       demo +
@@ -69,12 +83,46 @@
         .toLowerCase();
       return hay.indexOf(q) >= 0;
     });
-    grid.innerHTML = rows.length
-      ? rows.map(card).join('')
-      : '<p class="empty">没有符合条件的案例。</p>';
+
     countEl.textContent = '共 ' + allCases.length + ' 条案例' +
       (rows.length !== allCases.length ? '（显示 ' + rows.length + ' 条）' : '');
+
+    if (!rows.length) {
+      grid.innerHTML = '<p class="empty">没有符合条件的案例。</p>';
+      lastColCount = 0;
+      return;
+    }
+
+    var n = colCount();
+    lastColCount = n;
+    grid.innerHTML = '';
+    var cols = [];
+    for (var i = 0; i < n; i++) {
+      var col = document.createElement('div');
+      col.className = 'col';
+      grid.appendChild(col);
+      cols.push(col);
+    }
+    // Append each card to the currently shortest column.
+    rows.forEach(function (item) {
+      var target = cols[0];
+      for (var j = 1; j < cols.length; j++) {
+        if (cols[j].offsetHeight < target.offsetHeight) target = cols[j];
+      }
+      var t = document.createElement('template');
+      t.innerHTML = cardHTML(item).trim();
+      target.appendChild(t.content.firstElementChild);
+    });
   }
+
+  // Prompt expand/collapse (event delegation; animation is pure CSS).
+  grid.addEventListener('click', function (e) {
+    var btn = e.target.closest('.prompt-toggle');
+    if (!btn) return;
+    var wrap = btn.parentElement.querySelector('.prompt-wrap');
+    var open = wrap.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
 
   document.getElementById('filters').addEventListener('click', function (e) {
     var btn = e.target.closest('.pill');
@@ -85,6 +133,15 @@
     render();
   });
   searchEl.addEventListener('input', render);
+
+  // Re-distribute only when the column count actually changes.
+  var resizeTimer = null;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      if (allCases.length && colCount() !== lastColCount) render();
+    }, 150);
+  });
 
   fetch('data/cases.json')
     .then(function (r) {
