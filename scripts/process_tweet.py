@@ -154,6 +154,10 @@ def analyze_with_llm(tweet_text: str, user_notes: str = "") -> dict:
 
 def fallback_record(meta: dict, user_notes: str) -> dict:
     """Used when LLM_API_KEY is not configured: keep the pipeline working."""
+    if "### " in (user_notes or ""):
+        # Raw issue-form dump, not real notes — don't leak form scaffolding
+        # into the record.
+        user_notes = ""
     first_line = (meta["text"] or "").strip().split("\n")[0][:40]
     return {
         "category": "video_gen",
