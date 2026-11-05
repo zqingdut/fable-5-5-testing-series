@@ -53,9 +53,13 @@ jobs:
           else
             URL=$(printf '%s' "$ISSUE_BODY" | grep -Eo 'https://(x|twitter)\.com/[^/]+/status/[0-9]+' | head -n 1 || true)
             echo "TWEET_URL=$URL" >> "$GITHUB_ENV"
+            # Notes = only the form's 补充说明 section (the raw body also
+            # contains the 推文链接 section and form scaffolding).
+            NOTES=$(printf '%s\n' "$ISSUE_BODY" | awk '/^### .*补充说明/{flag=1;next}/^### /{flag=0}flag' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | grep -v '^$' || true)
+            if [ "$NOTES" = "_No response_" ]; then NOTES=""; fi
             {
               echo "USER_NOTES<<EOF"
-              printf '%s\n' "$ISSUE_BODY"
+              printf '%s\n' "$NOTES"
               echo "EOF"
             } >> "$GITHUB_ENV"
           fi
