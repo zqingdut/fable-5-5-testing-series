@@ -266,7 +266,14 @@
     "tweet_url": "https://x.com/camperaigg/status/2117666378174050352",
     "verification": "实测验证",
     "video_url": "",
-    "work_time": "1h54m"
+    "work_time": "1h54m",
+    "title_en": "Clockwork Bird",
+    "summary_en": "A fully vector clockwork bird assembles itself on camera, with an original waltz and purely math-synthesized sound effects throughout.",
+    "highlights_en": [
+      "Vector clockwork-bird parts fly in and assemble; one continuous shot",
+      "Original waltz score throughout",
+      "Purely math-synthesized SFX, frame-accurate to ±5ms"
+    ]
   },
   {
     "author": "@camperaigg",
@@ -293,7 +300,14 @@
     "tweet_url": "https://x.com/camperaigg/status/2117694354685092255",
     "verification": "实测验证",
     "video_url": "",
-    "work_time": "32min+"
+    "work_time": "32min+",
+    "title_en": "Link's Master Sword",
+    "summary_en": "Link's Master Sword modeled and filmed by a single Blender script, with an original orchestral score.",
+    "highlights_en": [
+      "Complete single-script modeling (Triforce relief, braided grip, layered feather guard)",
+      "Automatic z-fighting fixes",
+      "Continuous camera move, forest lighting, original orchestral score"
+    ]
   },
   {
     "author": "@camperaigg",
@@ -321,7 +335,16 @@
     "tweet_url": "https://x.com/camperaigg/status/2117717189059026969",
     "verification": "实测验证",
     "video_url": "",
-    "work_time": "66min"
+    "work_time": "66min",
+    "title_en": "Anime Stickman Sword Fight",
+    "summary_en": "Anime-style stickman sword fight: cloth simulation, impact flashes and 228 physics-synced sound effects.",
+    "highlights_en": [
+      "Rigged bones + 120Hz cloth; lightning katana vs flame greatsword",
+      "One-frame impact flashes (mono/inverted/duotone)",
+      "Original 120BPM score with 16 instruments",
+      "228 physics-synced SFX (79 auto-detected from sword-tip velocity)",
+      "Full silence right before the climax"
+    ]
   },
   {
     "author": "@camperaigg",
@@ -348,7 +371,14 @@
     "tweet_url": "https://x.com/camperaigg/status/2117914482752299311",
     "verification": "实测验证",
     "video_url": "",
-    "work_time": "107min"
+    "work_time": "107min",
+    "title_en": "Transformer Truck",
+    "summary_en": "A fully rigged transforming truck with Geometry Nodes rain, ripples and fully synthesized mechanical sounds.",
+    "highlights_en": [
+      "51-joint rig with ground solving",
+      "Geometry Nodes rain and ripples",
+      "64 fully synthesized SFX (diesel, air brakes, servos)"
+    ]
   },
   {
     "author": "@camperaigg",
@@ -376,7 +406,15 @@
     "tweet_url": "https://x.com/camperaigg/status/2117966825048997914",
     "verification": "实测验证",
     "video_url": "",
-    "work_time": "133min"
+    "work_time": "133min",
+    "title_en": "Howl's Moving Castle",
+    "summary_en": "A walking castle: full steam-engine-to-gait modeling with a mid-video shell cutaway.",
+    "highlights_en": [
+      "Complete steam engine → gear train → four-legged gait (solved from the planted foot)",
+      "Mid-video shell cutaway",
+      "Waltz-exact stepping (1.4s/beat)",
+      "Self-detected and optimized grass rendering (9.3s → 4.2s/frame)"
+    ]
   },
   {
     "author": "@camperaigg",
@@ -404,7 +442,15 @@
     "tweet_url": "https://x.com/camperaigg/status/2118002649929056373",
     "verification": "实测验证",
     "video_url": "",
-    "work_time": "106min"
+    "work_time": "106min",
+    "title_en": "Mechanical Heart",
+    "summary_en": "A mechanical heart with a cutaway animation: twin-piston crankshaft and a heartbeat-synced score.",
+    "highlights_en": [
+      "Twin-piston crankshaft, shell-opening animation",
+      "Golden oil bubbles and drips",
+      "Heartbeat-synced score",
+      "Self-diagnosed hidden lighting issue"
+    ]
   },
   {
     "author": "@camperaigg",
@@ -432,6 +478,15 @@
     "tweet_url": "https://x.com/camperaigg/status/2118069524306284556",
     "verification": "实测验证",
     "video_url": "",
-    "work_time": "154min"
+    "work_time": "154min",
+    "title_en": "Whale Breach",
+    "summary_en": "A whale breaches a cel-shaded ocean: 16.9M-particle fluid and a 1.09M-triangle whale built purely in code.",
+    "highlights_en": [
+      "16.9M-particle fluid (1200 steps/s)",
+      "Three-layer FFT waves + cel shading",
+      "1.09M-triangle whale built purely in code",
+      "Underwater optics (Snell's window)",
+      "Self-detected and re-rendered intersection artifacts"
+    ]
   }
 ]
