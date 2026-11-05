@@ -223,6 +223,17 @@ def ingest_case(tweet_url: str, user_notes: str = "") -> dict | None:
         llm_data["category"] = "video_gen"
         llm_data["category_name"] = CATEGORIES["video_gen"]
 
+    # Never let a missing LLM field crash ingestion downstream.
+    first_line = (meta["text"] or "").strip().split("\n")[0][:40]
+    if not llm_data.get("title"):
+        llm_data["title"] = first_line or "Fable 5.5 测试案例"
+    if not llm_data.get("summary"):
+        llm_data["summary"] = (meta["text"] or "")[:60]
+    if not llm_data.get("title_en"):
+        llm_data["title_en"] = llm_data["title"]
+    if not llm_data.get("summary_en"):
+        llm_data["summary_en"] = llm_data["summary"]
+
     new_case = {
         "id": tweet_id,
         "tweet_url": tweet_url,
@@ -241,7 +252,7 @@ def ingest_case(tweet_url: str, user_notes: str = "") -> dict | None:
     cases.insert(0, new_case)
     with open(CASES_FILE, "w", encoding="utf-8") as f:
         json.dump(cases, f, ensure_ascii=False, indent=2)
-    print(f"成功收录案例: {new_case['title']}")
+    print(f"成功收录案例: {new_case.get('title', '')}")
     return new_case
 
 
