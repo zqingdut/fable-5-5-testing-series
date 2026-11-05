@@ -167,20 +167,17 @@ def fallback_record(meta: dict, user_notes: str) -> dict:
     }
 
 
-def main() -> int:
-    tweet_url = os.environ.get("TWEET_URL", "").strip()
-    user_notes = os.environ.get("USER_NOTES", "").strip()
-    if not tweet_url:
-        print("TWEET_URL 为空，跳过。")
-        return 0
-
+def ingest_case(tweet_url: str, user_notes: str = "") -> dict | None:
+    """Ingest one tweet into data/cases.json. Returns the new case, or None
+    if the tweet is already indexed. Raises on unrecoverable fetch errors
+    so batch callers can skip the tweet and continue."""
     author, tweet_id = extract_tweet_ref(tweet_url)
 
     with open(CASES_FILE, "r", encoding="utf-8") as f:
         cases = json.load(f)
     if any(c["id"] == tweet_id for c in cases):
         print(f"推文 {tweet_id} 已存在，跳过处理。")
-        return 0
+        return None
 
     meta = fetch_tweet_metadata(author, tweet_id)
 
@@ -200,7 +197,7 @@ def main() -> int:
             print(f"LLM 解析失败，降级为基础记录: {e}")
             llm_data = fallback_record(meta, user_notes)
     else:
-        print("未配置 LLM_API_KEY，使用基础记录（请在仓库 Secrets 中添加后重跑以获得完整分类）。")
+        print("未配置 LLM_API_KEY，使用基础记录（请在仓库 Secrets 中添加后获得完整分类）。")
         llm_data = fallback_record(meta, user_notes)
 
     if llm_data.get("category") not in CATEGORIES:
@@ -226,6 +223,16 @@ def main() -> int:
     with open(CASES_FILE, "w", encoding="utf-8") as f:
         json.dump(cases, f, ensure_ascii=False, indent=2)
     print(f"成功收录案例: {new_case['title']}")
+    return new_case
+
+
+def main() -> int:
+    tweet_url = os.environ.get("TWEET_URL", "").strip()
+    user_notes = os.environ.get("USER_NOTES", "").strip()
+    if not tweet_url:
+        print("TWEET_URL 为空，跳过。")
+        return 0
+    ingest_case(tweet_url, user_notes)
     return 0
 
 
