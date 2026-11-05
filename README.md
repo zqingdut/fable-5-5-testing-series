@@ -13,17 +13,6 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| <img src="assets/previews/2107251677615300969.webp" width="160" /> | — | Claude 一次生成漂移小游戏 | @Armaan_Jain123 | — | — | 39.146s | 2026-10-05 | [链接](https://x.com/Armaan_Jain123/status/2107251677615300969) |
-| <img src="assets/previews/2107180724399075488.webp" width="160" /> | — | Fable 5.5 一小时打造游戏 | @anshuc | — | — | 46.588s | 2026-10-05 | [链接](https://x.com/anshuc/status/2107180724399075488) |
-| <img src="assets/previews/2106900686764134654.webp" width="160" /> | — | 绝望深渊模型重塑 | @atomtanstudio | — | — | 126.783s | 2026-10-05 | [链接](https://x.com/atomtanstudio/status/2106900686764134654) |
-| <img src="assets/previews/2106762987872850092.webp" width="160" /> | — | 沙漠人造太阳交互场景 | @pankajkumar_dev | — | — | 74.6s | 2026-10-04 | [链接](https://x.com/pankajkumar_dev/status/2106762987872850092) |
-| <img src="assets/previews/2107108802440900621.webp" width="160" /> | — | 一次生成像素Bug游戏 | @blueemi99 | — | — | 83.648s | 2026-10-05 | [链接](https://x.com/blueemi99/status/2107108802440900621) |
-| <img src="assets/previews/2105822678519001360.webp" width="160" /> | — | 三体问题60帧渲染 | @zAdrielsan | — | — | 133.666s | 2026-10-02 | [链接](https://x.com/zAdrielsan/status/2105822678519001360) |
-| <img src="assets/previews/2106183281293381661.webp" width="160" /> | — | 下城建筑交互图 | @nroze22 | — | — | 22.033s | 2026-10-03 | [链接](https://x.com/nroze22/status/2106183281293381661) |
-| <img src="assets/previews/2106081142143168580.webp" width="160" /> | — | 人类文明三十年后动画 | @imjustnewatai | — | — | 189.013s | 2026-10-02 | [链接](https://x.com/imjustnewatai/status/2106081142143168580) |
-| <img src="assets/previews/2105884276864782557.webp" width="160" /> | — | Fable5.5想象HF事故 | @chetaslua | — | — | 220.933s | 2026-10-02 | [链接](https://x.com/chetaslua/status/2105884276864782557) |
-| <img src="assets/previews/2106112279079199037.webp" width="160" /> | — | Waymo驶过旧金山地标街 | @mindblown_ai | — | — | 72.655s | 2026-10-02 | [链接](https://x.com/mindblown_ai/status/2106112279079199037) |
-| <img src="assets/previews/2107097706661560595.webp" width="160" /> | — | Fable 5.5 作品混剪 | @yihui_indie | — | — | 286.933s | 2026-10-05 | [链接](https://x.com/yihui_indie/status/2107097706661560595) |
 | <img src="assets/previews/2117666378174050352.webp" width="160" /> | 初始 | Clockwork Bird（发条鸟） | @camperaigg | 1h54m | ~$20 | 60s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117666378174050352) |
 | <img src="assets/previews/2117694354685092255.webp" width="160" /> | Part 2 | Link's Master Sword | @camperaigg | 32min+ | $11.66 | 34s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117694354685092255) |
 | <img src="assets/previews/2117717189059026969.webp" width="160" /> | Part 3 | Anime Stickman Sword Fight | @camperaigg | 66min | $15.71 | 46s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117717189059026969) |
@@ -35,9 +24,6 @@
 
 | 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
 | :--- | :--- | :--- | :--- |
-| <img src="assets/previews/2106081142143168580.webp" width="220" /> | **人类文明三十年后动画**<br/>单一提示生成三分钟动画电影，并附原创配乐，无素材与库存音乐。<br/>*By @imjustnewatai (2026-10-02)* | 🏷️ 实测验证 | [🔗 原推文](https://x.com/imjustnewatai/status/2106081142143168580)<br/><details><summary>查看 Prompt</summary><pre>a video of all human progress, then 30 years into the future.</pre></details> |
-| <img src="assets/previews/2105884276864782557.webp" width="220" /> | **Fable5.5想象HF事故**<br/>结合Blender与ElevenLabs，展现AI创意3D叙事。<br/>*By @chetaslua (2026-10-02)* | `Blender` `ElevenLabs API`<br/>🏷️ 灰度路由/传闻 | [🔗 原推文](https://x.com/chetaslua/status/2105884276864782557)<br/><details><summary>查看 Prompt</summary><pre>Hugging Face Incident Imagined by Fable 5.5</pre></details> |
-| <img src="assets/previews/2107097706661560595.webp" width="220" /> | **Fable 5.5 作品混剪**<br/>汇总 73 个开源作品，展示 Fable 5.5 的生成能力与持续更新。<br/>*By @yihui_indie (2026-10-05)* | 🏷️ 实测验证 | [🔗 原推文](https://x.com/yihui_indie/status/2107097706661560595)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117666378174050352.webp" width="220" /> | **Clockwork Bird（发条鸟）**<br/>全矢量发条鸟自动组装成片，原创华尔兹与纯数学合成音效贯穿。<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `HyperFrames`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117666378174050352)<br/><details><summary>查看 Prompt</summary><pre>一句提示词（未公开完整原文）</pre></details> |
 | <img src="assets/previews/2117694354685092255.webp" width="220" /> | **Link's Master Sword**<br/>单脚本在 Blender 中建模大师之剑并自动成片，附原创管弦乐。<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117694354685092255)<br/><details><summary>查看 Prompt</summary><pre>Build Link's Master Sword in Blender（后续追加“make a video of it”）</pre></details> |
 | <img src="assets/previews/2117717189059026969.webp" width="220" /> | **Anime Stickman Sword Fight**<br/>动漫风火柴人剑斗：布料模拟、冲击闪与 228 个物理同步音效。<br/>*By @camperaigg (2026-11-03)* | `Claude Code`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117717189059026969)<br/><details><summary>查看 Prompt</summary><pre>Make me a video of 2 stickman fighting, anime style.</pre></details> |
@@ -45,22 +31,6 @@
 | <img src="assets/previews/2117966825048997914.webp" width="220" /> | **Howl's Moving Castle**<br/>会行走的城堡：蒸汽机到四足步态全建模，中途开壳剖视。<br/>*By @camperaigg (2026-11-04)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117966825048997914)<br/><details><summary>查看 Prompt</summary><pre>Make me Howl's moving castle and also show its internal machinery.</pre></details> |
 | <img src="assets/previews/2118002649929056373.webp" width="220" /> | **Mechanical Heart**<br/>机械心脏开壳动画：双活塞曲轴与心跳同步配乐。<br/>*By @camperaigg (2026-11-04)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2118002649929056373)<br/><details><summary>查看 Prompt</summary><pre>Make a mechanical heart and show its insides, use blender.</pre></details> |
 | <img src="assets/previews/2118069524306284556.webp" width="220" /> | **Whale Breach**<br/>1690 万粒子流体与 cel-shading 海洋，鲸鱼跃水成片。<br/>*By @camperaigg (2026-11-04)* | `Claude Code`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2118069524306284556)<br/><details><summary>查看 Prompt</summary><pre>Make a whale breach a cel-shaded ocean.</pre></details> |
-## 📱 交互式 H5 与微应用 (Interactive H5 & Apps)
-
-| 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
-| :--- | :--- | :--- | :--- |
-| <img src="assets/previews/2107180724399075488.webp" width="220" /> | **Fable 5.5 一小时打造游戏**<br/>一次生成宝可梦×Balatro游戏，含机制、视觉、音乐与演示视频。<br/>*By @anshuc (2026-10-05)* | `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/anshuc/status/2107180724399075488) / [🕹️ 在线试玩](https://pokermon.anshu.dev)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
-| <img src="assets/previews/2106762987872850092.webp" width="220" /> | **沙漠人造太阳交互场景**<br/>生成沙漠中可移动、调镜、控制日食的人造太阳，光影反射逼真。<br/>*By @pankajkumar_dev (2026-10-04)* | `HTML5` `Canvas` `Three.js`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/pankajkumar_dev/status/2106762987872850092)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
-| <img src="assets/previews/2106183281293381661.webp" width="220" /> | **下城建筑交互图**<br/>按建造年份绘制曼哈顿真实建筑，点击可查看详情。<br/>*By @nroze22 (2026-10-03)* | `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/nroze22/status/2106183281293381661) / [🕹️ 在线试玩](https://claude.ai/artifact/Tx5L1sQeXd4e7vp9DifrwK)<br/><details><summary>查看 Prompt</summary><pre>something cool and accurate in an architectural drawing style. every building standing in Lower Manhattan today, drawn in the year it went up. Real footprints, real heights, true scale. Tap any tower for its story.</pre></details> |
-## 🎮 网页小游戏与物理模拟 (Games & Physics)
-
-| 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
-| :--- | :--- | :--- | :--- |
-| <img src="assets/previews/2107251677615300969.webp" width="220" /> | **Claude 一次生成漂移小游戏**<br/>Fable 5.5 单次生成网页漂移游戏，可直接在线试玩体验。<br/>*By @Armaan_Jain123 (2026-10-05)* | `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/Armaan_Jain123/status/2107251677615300969) / [🕹️ 在线试玩](https://drift.hexclave.app)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
-| <img src="assets/previews/2106900686764134654.webp" width="220" /> | **绝望深渊模型重塑**<br/>Fable 5.5重制网页游戏模型，优化节奏与风险回报体验。<br/>*By @atomtanstudio (2026-10-05)* | `HTML5` `Three.js`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/atomtanstudio/status/2106900686764134654) / [🕹️ 在线试玩](https://threecade.games)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
-| <img src="assets/previews/2107108802440900621.webp" width="220" /> | **一次生成像素Bug游戏**<br/>Claude 一次生成 Clawd 打Bug与Boss 的像素游戏，体验接近人类独立开发者。<br/>*By @blueemi99 (2026-10-05)* | `HTML5` `Canvas` `JavaScript`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/blueemi99/status/2107108802440900621) / [🕹️ 在线试玩](https://claude.ai/artifact/Bor4eKVfaKakr6QSfoT8UZ)<br/><details><summary>查看 Prompt</summary><pre>made me this pixel game where u play as Clawd, defeating bugs and bosses</pre></details> |
-| <img src="assets/previews/2105822678519001360.webp" width="220" /> | **三体问题60帧渲染**<br/>一次生成约1000行代码，CPU辛物理、GPU像素计算，并形式化证明程序定律。<br/>*By @zAdrielsan (2026-10-02)* | `HTML5` `GPU` `WebGL`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/zAdrielsan/status/2105822678519001360)<br/><details><summary>查看 Prompt</summary><pre>Asked Fable 5.5 for the three-body problem. One-shot.</pre></details> |
-| <img src="assets/previews/2106112279079199037.webp" width="220" /> | **Waymo驶过旧金山地标街**<br/>用Fable 5.5与Three.js实现Lombard Street驾驶场景，具强空间感与交互性。<br/>*By @mindblown_ai (2026-10-02)* | `Three.js` `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/mindblown_ai/status/2106112279079199037) / [🕹️ 在线试玩](https://teleoperator.mindblown.ai)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 ## 详细记录
 ### 初始：Clockwork Bird（发条鸟）
 - **原帖**：[https://x.com/camperaigg/status/2117666378174050352](https://x.com/camperaigg/status/2117666378174050352) · **耗时**：1h54m · **成本**：~$20 · **时长**：60s- **提示词**：一句提示词（未公开完整原文）
