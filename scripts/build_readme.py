@@ -11,6 +11,13 @@ CATEGORIES = {
     "shader_ui": "🎨 前端 UI 与 Shader 特效 (UI & Shaders)",
 }
 
+CATEGORIES_EN = {
+    "video_gen": "🎬 Video & Animation",
+    "interactive_h5": "📱 Interactive H5 & Apps",
+    "game_physics": "🎮 Games & Physics",
+    "shader_ui": "🎨 UI & Shaders",
+}
+
 
 def cell(value) -> str:
     """Sanitize a value for use inside a Markdown table cell."""
@@ -47,10 +54,15 @@ def build():
     env.filters["cost"] = cost
     template = env.get_template("README.md.j2")
     md = template.render(cases=cases, categories=CATEGORIES)
-
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(md)
     print(f"README.md rendered from {len(cases)} cases.")
+
+    template_en = env.get_template("README_EN.md.j2")
+    md_en = template_en.render(cases=cases, categories_en=CATEGORIES_EN)
+    with open("README_EN.md", "w", encoding="utf-8") as f:
+        f.write(md_en)
+    print(f"README_EN.md rendered from {len(cases)} cases.")
 
 
 if __name__ == "__main__":

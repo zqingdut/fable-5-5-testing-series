@@ -47,6 +47,8 @@ LLM_FIELDS = [
     "category_name",
     "title",
     "summary",
+    "title_en",
+    "summary_en",
     "prompt",
     "tech_stack",
     "demo_url",

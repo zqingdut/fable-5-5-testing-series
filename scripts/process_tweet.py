@@ -136,6 +136,8 @@ def analyze_with_llm(tweet_text: str, user_notes: str = "") -> dict:
 - category_name: 对应 ["🎬 动画与视频生成", "📱 交互式 H5 与微应用", "🎮 网页小游戏与物理模拟", "🎨 前端 UI 与 Shader 特效"]
 - title: 简短有吸引力的中文标题（15字以内）
 - summary: 一句话中文摘要，说明测试效果与亮点（40字以内）
+- title_en: 对应的英文标题（8个词以内）
+- summary_en: 对应的一句英文摘要（25个词以内）
 - prompt: 提取推文中提到的原始 Prompt（若无则填 "未公开"）
 - tech_stack: 数组，提取涉及的技术栈如 ["Three.js", "HTML5", "Canvas", "Remotion"]
 - demo_url: 推文中包含的在线预览链接（若无则填 ""）
@@ -149,7 +151,18 @@ def analyze_with_llm(tweet_text: str, user_notes: str = "") -> dict:
             {"role": "user", "content": f"推文内容:\n{tweet_text}\n\n补充说明:\n{user_notes}"},
         ],
     )
-    return json.loads(response.choices[0].message.content)
+    content = response.choices[0].message.content
+    # Some providers return content as a list of parts instead of a string.
+    if isinstance(content, list):
+        content = "".join(
+            part.get("text", "") if isinstance(part, dict) else str(part)
+            for part in content
+        )
+    parsed = json.loads(content)
+    # Some models wrap the object in a one-element JSON array.
+    if isinstance(parsed, list):
+        parsed = next((x for x in parsed if isinstance(x, dict)), {})
+    return parsed
 
 
 def fallback_record(meta: dict, user_notes: str) -> dict:
@@ -164,6 +177,8 @@ def fallback_record(meta: dict, user_notes: str) -> dict:
         "category_name": CATEGORIES["video_gen"],
         "title": first_line or "Fable 5.5 测试案例",
         "summary": (meta["text"] or "")[:60],
+        "title_en": first_line or "Fable 5.5 test case",
+        "summary_en": (meta["text"] or "")[:120],
         "prompt": user_notes or "未公开",
         "tech_stack": [],
         "demo_url": "",
