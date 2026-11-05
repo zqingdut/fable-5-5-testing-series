@@ -20,6 +20,7 @@ import json
 import os
 import re
 import sys
+from datetime import datetime, timedelta, timezone
 
 import requests
 
@@ -35,6 +36,18 @@ SOURCES = [
 ]
 
 LINK_RE = re.compile(r"https://(?:x|twitter)\.com/([^/\s)\"']+)/status/(\d+)")
+
+# Editorial cutoff (set by the repo owner): only tweets posted in
+# November 2026 or later are eligible — the verifiable Fable 5.5 testing
+# wave started in November; earlier posts are gray-route claims.
+CUTOFF_MS = int(
+    datetime(2026, 11, 1, tzinfo=timezone(timedelta(hours=8))).timestamp() * 1000
+)
+
+
+def tweet_ms(tweet_id: str) -> int:
+    """Post time (ms) decoded from the tweet snowflake ID — no API call."""
+    return (int(tweet_id) >> 22) + 1288834974657
 
 
 def from_sibling_lists() -> list[tuple[str, str]]:
@@ -93,7 +106,12 @@ def main() -> int:
             continue
         seen.add(tid)
         candidates.append((author, tid))
-    print(f"候选新推文: {len(candidates)} 条，本次最多收录 {max_new} 条")
+    before = len(candidates)
+    candidates = [c for c in candidates if tweet_ms(c[1]) >= CUTOFF_MS]
+    # Newest first, so each run ingests the freshest cases.
+    candidates.sort(key=lambda p: int(p[1]), reverse=True)
+    print(f"候选新推文: {len(candidates)} 条（日期过滤掉 {before - len(candidates)} 条"
+          f" 2026-11 之前的），本次最多收录 {max_new} 条")
     if os.environ.get("DRY_RUN"):
         for author, tid in candidates[:15]:
             print(f"  [dry-run] https://x.com/{author}/status/{tid}")
