@@ -10,11 +10,15 @@
 <body>
 <header class="hero">
   <h1>Fable 5.5 Testing Series</h1>
-  <p class="sub">Claude Fable 5.5 单句提示词实测案例索引 — 预览 · 提示词 · 耗时与成本</p>
-  <p class="notice">⚠️ Fable 5.5 尚未被 Anthropic 官方发布，以下均为早期访问/路由报告，请以原帖为准。预览为原视频前 5 秒动图，完整内容见原帖；版权归各原作者所有。</p>
+  <p class="sub" id="heroSub">Claude Fable 5.5 单句提示词实测案例索引 — 预览 · 提示词 · 耗时与成本</p>
+  <p class="notice" id="heroNotice">⚠️ Fable 5.5 尚未被 Anthropic 官方发布，以下均为早期访问/路由报告，请以原帖为准。预览为原视频前 5 秒动图，完整内容见原帖；版权归各原作者所有。</p>
   <div class="hero-actions">
-    <a class="btn" href="https://github.com/zqingdut/fable-5-5-testing-series" target="_blank" rel="noopener">GitHub 仓库</a>
-    <a class="btn ghost" href="https://github.com/zqingdut/fable-5-5-testing-series/issues/new?template=submit_case.yml" target="_blank" rel="noopener">📥 提交案例</a>
+    <a class="btn" id="btnRepo" href="https://github.com/zqingdut/fable-5-5-testing-series" target="_blank" rel="noopener">GitHub 仓库</a>
+    <a class="btn ghost" id="btnSubmit" href="https://github.com/zqingdut/fable-5-5-testing-series/issues/new?template=submit_case.yml" target="_blank" rel="noopener">📥 提交案例</a>
+    <span class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" id="langZh">中文</button>
+      <button type="button" class="lang-btn" id="langEn">EN</button>
+    </span>
     <span class="count" id="count"></span>
   </div>
 </header>
@@ -28,10 +32,10 @@
   <input id="search" type="search" placeholder="搜索标题 / 作者 / 技术栈…" />
 </nav>
 
-<main id="grid" class="grid"><p class="loading">加载案例中…</p></main>
+<main id="grid" class="grid"><p class="loading" id="loadingText">加载案例中…</p></main>
 
 <footer>
-  <p>索引与整理以 MIT 发布；原帖内容与视频版权归各原作者所有。数据自动更新自
+  <p id="footerText">索引与整理以 MIT 发布；原帖内容与视频版权归各原作者所有。数据自动更新自
   <a href="https://github.com/zqingdut/fable-5-5-testing-series/blob/main/data/cases.json" target="_blank" rel="noopener">data/cases.json</a>。</p>
 </footer>
 

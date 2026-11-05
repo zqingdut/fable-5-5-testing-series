@@ -1,3 +1,5 @@
+**中文** | [English](README_EN.md)
+
 # Fable 5.5 Testing Series — Claude Fable 5.5 实测案例索引
 
 收集 X (Twitter) 上关于 **Claude Fable 5.5** 的单句提示词动画、3D 与交互测试案例：链接、提示词、耗时与成本、结果亮点，一处索引。

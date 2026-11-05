@@ -1,14 +1,82 @@
-// Fable 5.5 Testing Series — waterfall front-end.
+// Fable 5.5 Testing Series — waterfall front-end (bilingual zh / en).
 // Data source: data/cases.json (single source of truth, auto-maintained).
-// Layout: JS-managed flex columns. Expanding a card's prompt only grows
-// that card's own column — no global reflow, no width jumps.
+// English content uses title_en / summary_en when present, else falls back
+// to the original fields. Layout: JS-managed flex columns — expanding a
+// card's prompt only grows that card's own column (no global reflow).
 (function () {
+  var STR = {
+    zh: {
+      sub: 'Claude Fable 5.5 单句提示词实测案例索引 — 预览 · 提示词 · 耗时与成本',
+      notice: '⚠️ Fable 5.5 尚未被 Anthropic 官方发布，以下均为早期访问/路由报告，请以原帖为准。预览为原视频前 5 秒动图，完整内容见原帖；版权归各原作者所有。',
+      repo: 'GitHub 仓库',
+      submit: '📥 提交案例',
+      pills: {
+        all: '全部',
+        video_gen: '🎬 动画与视频生成',
+        interactive_h5: '📱 交互式 H5 与微应用',
+        game_physics: '🎮 网页小游戏与物理模拟',
+        shader_ui: '🎨 前端 UI 与 Shader 特效'
+      },
+      searchPh: '搜索标题 / 作者 / 技术栈…',
+      count: function (total, shown) {
+        return '共 ' + total + ' 条案例' + (shown !== total ? '（显示 ' + shown + ' 条）' : '');
+      },
+      time: '耗时 ',
+      cost: '成本 ',
+      viewPrompt: '查看 Prompt',
+      origPost: '🔗 原推文',
+      demo: '🕹️ 在线试玩',
+      loading: '加载案例中…',
+      empty: '没有符合条件的案例。',
+      loadFail: function (m) { return '案例数据加载失败（' + m + '），请到 GitHub 仓库查看。'; },
+      footer: '索引与整理以 MIT 发布；原帖内容与视频版权归各原作者所有。数据自动更新自 <a href="https://github.com/zqingdut/fable-5-5-testing-series/blob/main/data/cases.json" target="_blank" rel="noopener">data/cases.json</a>。',
+      promptFallback: '未公开'
+    },
+    en: {
+      sub: 'An index of Claude Fable 5.5 single-prompt tests — previews · prompts · time & cost',
+      notice: '⚠️ Fable 5.5 has not been officially released by Anthropic. Everything here is early-access / routing reports — please refer to the original posts. Previews are animated clips of the first 5 seconds; see the original post for the full piece. All content belongs to its authors.',
+      repo: 'GitHub Repo',
+      submit: '📥 Submit a Case',
+      pills: {
+        all: 'All',
+        video_gen: '🎬 Video & Animation',
+        interactive_h5: '📱 Interactive H5 & Apps',
+        game_physics: '🎮 Games & Physics',
+        shader_ui: '🎨 UI & Shaders'
+      },
+      searchPh: 'Search titles / authors / stack…',
+      count: function (total, shown) {
+        return total + ' cases' + (shown !== total ? ' (' + shown + ' shown)' : '');
+      },
+      time: 'Time ',
+      cost: 'Cost ',
+      viewPrompt: 'View Prompt',
+      origPost: '🔗 Original Post',
+      demo: '🕹️ Live Demo',
+      loading: 'Loading cases…',
+      empty: 'No cases match.',
+      loadFail: function (m) { return 'Failed to load case data (' + m + '). Please check the GitHub repo.'; },
+      footer: 'The index is MIT-licensed; posts and videos belong to their original authors. Data auto-updates from <a href="https://github.com/zqingdut/fable-5-5-testing-series/blob/main/data/cases.json" target="_blank" rel="noopener">data/cases.json</a>.',
+      promptFallback: 'Not published'
+    }
+  };
+
   var grid = document.getElementById('grid');
   var countEl = document.getElementById('count');
   var searchEl = document.getElementById('search');
   var activeCat = 'all';
   var allCases = [];
   var lastColCount = 0;
+
+  var lang = 'zh';
+  try {
+    var param = new URLSearchParams(window.location.search).get('lang');
+    var saved = window.localStorage.getItem('f55-lang');
+    if (param === 'en' || param === 'zh') lang = param;
+    else if (saved === 'en' || saved === 'zh') lang = saved;
+  } catch (e) { /* keep default */ }
+
+  function S() { return STR[lang]; }
 
   function esc(s) {
     return String(s == null ? '' : s)
@@ -33,40 +101,48 @@
     return 1;
   }
 
+  function pick(item, enField, field) {
+    if (lang === 'en' && item[enField]) return item[enField];
+    return item[field];
+  }
+
   function cardHTML(item) {
+    var s = S();
+    var title = pick(item, 'title_en', 'title');
+    var summary = pick(item, 'summary_en', 'summary');
     var metaBits = [esc(item.author), esc(item.created_at)];
     if (item.duration_sec) metaBits.push(esc(item.duration_sec) + 's');
-    if (item.work_time) metaBits.push('耗时 ' + esc(item.work_time));
+    if (item.work_time) metaBits.push(s.time + esc(item.work_time));
     var cost = fmtCost(item.cost_usd);
-    if (cost) metaBits.push('成本 ' + esc(cost));
+    if (cost) metaBits.push(s.cost + esc(cost));
 
     var chips = (item.tech_stack || [])
       .map(function (t) { return '<span class="chip">' + esc(t) + '</span>'; })
       .join('');
 
     var demo = item.demo_url
-      ? '<a href="' + esc(item.demo_url) + '" target="_blank" rel="noopener">🕹️ 在线试玩</a>'
+      ? '<a href="' + esc(item.demo_url) + '" target="_blank" rel="noopener">' + s.demo + '</a>'
       : '';
 
     return (
       '<article class="card">' +
       (item.preview_webp
-        ? '<img class="preview" loading="lazy" src="' + esc(item.preview_webp) + '" alt="' + esc(item.title) + ' 预览" />'
+        ? '<img class="preview" loading="lazy" src="' + esc(item.preview_webp) + '" alt="' + esc(title) + '" />'
         : '') +
       '<div class="body">' +
-      '<h3>' + esc(item.title) +
+      '<h3>' + esc(title) +
       (item.verification ? '<span class="badge">' + esc(item.verification) + '</span>' : '') +
       '</h3>' +
       '<div class="meta">' + metaBits.join(' · ') + '</div>' +
-      '<p class="summary">' + esc(item.summary) + '</p>' +
+      '<p class="summary">' + esc(summary) + '</p>' +
       (chips ? '<div class="chips">' + chips + '</div>' : '') +
       '<button class="prompt-toggle" type="button" aria-expanded="false">' +
-      '<span class="arrow">▸</span>查看 Prompt</button>' +
+      '<span class="arrow">▸</span>' + s.viewPrompt + '</button>' +
       '<div class="prompt-wrap"><div class="prompt-inner"><pre>' +
-      esc(item.prompt || '未公开') +
+      esc(item.prompt || s.promptFallback) +
       '</pre></div></div>' +
       '<div class="links">' +
-      '<a href="' + esc(item.tweet_url) + '" target="_blank" rel="noopener">🔗 原推文</a>' +
+      '<a href="' + esc(item.tweet_url) + '" target="_blank" rel="noopener">' + s.origPost + '</a>' +
       demo +
       '</div>' +
       '</div></article>'
@@ -74,21 +150,21 @@
   }
 
   function render() {
+    var s = S();
     var q = (searchEl.value || '').trim().toLowerCase();
     var rows = allCases.filter(function (c) {
       if (activeCat !== 'all' && c.category !== activeCat) return false;
       if (!q) return true;
-      var hay = [c.title, c.author, c.summary, (c.tech_stack || []).join(' ')]
+      var hay = [c.title, c.title_en, c.author, c.summary, c.summary_en, (c.tech_stack || []).join(' ')]
         .join(' ')
         .toLowerCase();
       return hay.indexOf(q) >= 0;
     });
 
-    countEl.textContent = '共 ' + allCases.length + ' 条案例' +
-      (rows.length !== allCases.length ? '（显示 ' + rows.length + ' 条）' : '');
+    countEl.textContent = s.count(allCases.length, rows.length);
 
     if (!rows.length) {
-      grid.innerHTML = '<p class="empty">没有符合条件的案例。</p>';
+      grid.innerHTML = '<p class="empty">' + s.empty + '</p>';
       lastColCount = 0;
       return;
     }
@@ -103,7 +179,6 @@
       grid.appendChild(col);
       cols.push(col);
     }
-    // Append each card to the currently shortest column.
     rows.forEach(function (item) {
       var target = cols[0];
       for (var j = 1; j < cols.length; j++) {
@@ -115,7 +190,36 @@
     });
   }
 
-  // Prompt expand/collapse (event delegation; animation is pure CSS).
+  function applyStatic() {
+    var s = S();
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    document.getElementById('heroSub').textContent = s.sub;
+    document.getElementById('heroNotice').textContent = s.notice;
+    document.getElementById('btnRepo').textContent = s.repo;
+    document.getElementById('btnSubmit').textContent = s.submit;
+    document.getElementById('footerText').innerHTML = s.footer;
+    searchEl.placeholder = s.searchPh;
+    document.querySelectorAll('.pill').forEach(function (p) {
+      var cat = p.getAttribute('data-cat');
+      if (s.pills[cat]) p.textContent = s.pills[cat];
+    });
+    document.getElementById('langZh').classList.toggle('active', lang === 'zh');
+    document.getElementById('langEn').classList.toggle('active', lang === 'en');
+    var lt = document.getElementById('loadingText');
+    if (lt) lt.textContent = s.loading;
+  }
+
+  function setLang(next) {
+    if (next !== 'zh' && next !== 'en') return;
+    lang = next;
+    try { window.localStorage.setItem('f55-lang', lang); } catch (e) { /* ignore */ }
+    applyStatic();
+    render();
+  }
+
+  document.getElementById('langZh').addEventListener('click', function () { setLang('zh'); });
+  document.getElementById('langEn').addEventListener('click', function () { setLang('en'); });
+
   grid.addEventListener('click', function (e) {
     var btn = e.target.closest('.prompt-toggle');
     if (!btn) return;
@@ -134,7 +238,6 @@
   });
   searchEl.addEventListener('input', render);
 
-  // Re-distribute only when the column count actually changes.
   var resizeTimer = null;
   window.addEventListener('resize', function () {
     clearTimeout(resizeTimer);
@@ -142,6 +245,8 @@
       if (allCases.length && colCount() !== lastColCount) render();
     }, 150);
   });
+
+  applyStatic();
 
   fetch('data/cases.json')
     .then(function (r) {
@@ -153,6 +258,6 @@
       render();
     })
     .catch(function (err) {
-      grid.innerHTML = '<p class="empty">案例数据加载失败（' + esc(err.message) + '），请到 GitHub 仓库查看。</p>';
+      grid.innerHTML = '<p class="empty">' + esc(S().loadFail(err.message)) + '</p>';
     });
 })();

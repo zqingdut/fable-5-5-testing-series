@@ -59,6 +59,17 @@ a { color: var(--teal); }
 }
 .btn.ghost { background: transparent; color: var(--teal); border: 1px solid var(--teal); }
 .count { color: var(--muted); font-size: 14px; margin-left: 6px; }
+.lang-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.lang-btn {
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  padding: 7px 13px;
+  font-size: 13.5px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.lang-btn.active { background: var(--teal); color: #06281f; font-weight: 600; }
 
 .filters {
   max-width: 1100px;
