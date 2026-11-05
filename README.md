@@ -11,6 +11,7 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2107097706661560595.webp" width="160" /> | — | Fable 5.5 有多离谱？看完这支全网 Fable5.5 作品混剪你就知道了 | @yihui_indie | — | — | 286.933s | 2026-10-05 | [链接](https://x.com/yihui_indie/status/2107097706661560595) |
 | <img src="assets/previews/2117666378174050352.webp" width="160" /> | 初始 | Clockwork Bird（发条鸟） | @camperaigg | 1h54m | ~$20 | 60s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117666378174050352) |
 | <img src="assets/previews/2117694354685092255.webp" width="160" /> | Part 2 | Link's Master Sword | @camperaigg | 32min+ | $11.66 | 34s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117694354685092255) |
 | <img src="assets/previews/2117717189059026969.webp" width="160" /> | Part 3 | Anime Stickman Sword Fight | @camperaigg | 66min | $15.71 | 46s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117717189059026969) |
@@ -22,6 +23,7 @@
 
 | 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2107097706661560595.webp" width="220" /> | **Fable 5.5 有多离谱？看完这支全网 Fable5.5 作品混剪你就知道了**<br/>Fable 5.5 有多离谱？看完这支全网 Fable5.5 作品混剪你就知道了。  73 个作品全部开源，每天还在持续<br/>*By @yihui_indie (2026-10-05)* | 🏷️ 灰度路由/传闻 | [🔗 原推文](https://x.com/yihui_indie/status/2107097706661560595)<br/><details><summary>查看 Prompt</summary><pre>### 推文链接  https://x.com/yihui_indie/status/2107097706661560595?a=xDPxRgipw9bljkpggHQ&s=20  ### 补充说明（可选）  _No response_</pre></details> |
 | <img src="assets/previews/2117666378174050352.webp" width="220" /> | **Clockwork Bird（发条鸟）**<br/>全矢量发条鸟自动组装成片，原创华尔兹与纯数学合成音效贯穿。<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `HyperFrames`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117666378174050352)<br/><details><summary>查看 Prompt</summary><pre>一句提示词（未公开完整原文）</pre></details> |
 | <img src="assets/previews/2117694354685092255.webp" width="220" /> | **Link's Master Sword**<br/>单脚本在 Blender 中建模大师之剑并自动成片，附原创管弦乐。<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117694354685092255)<br/><details><summary>查看 Prompt</summary><pre>Build Link's Master Sword in Blender（后续追加“make a video of it”）</pre></details> |
 | <img src="assets/previews/2117717189059026969.webp" width="220" /> | **Anime Stickman Sword Fight**<br/>动漫风火柴人剑斗：布料模拟、冲击闪与 228 个物理同步音效。<br/>*By @camperaigg (2026-11-03)* | `Claude Code`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117717189059026969)<br/><details><summary>查看 Prompt</summary><pre>Make me a video of 2 stickman fighting, anime style.</pre></details> |
