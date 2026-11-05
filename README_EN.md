@@ -13,6 +13,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Part | Title | Author | Time | Cost | Length | Date | Post |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117169796290916732.webp" width="160" /> | — | Code-Based Video Beats AI Models | @chetaslua | — | — | 80.666s | 2026-11-02 | [Link](https://x.com/chetaslua/status/2117169796290916732) |
 | <img src="assets/previews/2117666378174050352.webp" width="160" /> | Initial | Clockwork Bird | @camperaigg | 1h54m | ~$20 | 60s | 2026-11-03 | [Link](https://x.com/camperaigg/status/2117666378174050352) |
 | <img src="assets/previews/2117694354685092255.webp" width="160" /> | Part 2 | Link's Master Sword | @camperaigg | 32min+ | $11.66 | 34s | 2026-11-03 | [Link](https://x.com/camperaigg/status/2117694354685092255) |
 | <img src="assets/previews/2117717189059026969.webp" width="160" /> | Part 3 | Anime Stickman Sword Fight | @camperaigg | 66min | $15.71 | 46s | 2026-11-03 | [Link](https://x.com/camperaigg/status/2117717189059026969) |
@@ -24,6 +25,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Case & Summary | Stack & Status | Prompt / Links |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117169796290916732.webp" width="220" /> | **Code-Based Video Beats AI Models**<br/>A single prompt generates high-quality video, outperforming AI video models.<br/>*By @chetaslua (2026-11-02)* | 🏷️ 灰度路由/传闻 | [🔗 Original post](https://x.com/chetaslua/status/2117169796290916732)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117666378174050352.webp" width="220" /> | **Clockwork Bird**<br/>A fully vector clockwork bird assembles itself on camera, with an original waltz and purely math-synthesized sound effects throughout.<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `HyperFrames`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2117666378174050352)<br/><details><summary>View Prompt</summary><pre>一句提示词（未公开完整原文）</pre></details> |
 | <img src="assets/previews/2117694354685092255.webp" width="220" /> | **Link's Master Sword**<br/>Link's Master Sword modeled and filmed by a single Blender script, with an original orchestral score.<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2117694354685092255)<br/><details><summary>View Prompt</summary><pre>Build Link's Master Sword in Blender（后续追加“make a video of it”）</pre></details> |
 | <img src="assets/previews/2117717189059026969.webp" width="220" /> | **Anime Stickman Sword Fight**<br/>Anime-style stickman sword fight: cloth simulation, impact flashes and 228 physics-synced sound effects.<br/>*By @camperaigg (2026-11-03)* | `Claude Code`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2117717189059026969)<br/><details><summary>View Prompt</summary><pre>Make me a video of 2 stickman fighting, anime style.</pre></details> |

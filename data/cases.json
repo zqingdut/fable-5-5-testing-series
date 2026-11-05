@@ -1,5 +1,27 @@
 [
   {
+    "id": "2117169796290916732",
+    "tweet_url": "https://x.com/chetaslua/status/2117169796290916732",
+    "author": "@chetaslua",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "纯代码视频惊艳模型",
+    "summary": "用单一提示词生成高质量视频，效果优于AI视频模型。",
+    "title_en": "Code-Based Video Beats AI Models",
+    "summary_en": "A single prompt generates high-quality video, outperforming AI video models.",
+    "prompt": "未公开",
+    "tech_stack": [],
+    "demo_url": "",
+    "verification": "灰度路由/传闻",
+    "preview_webp": "assets/previews/2117169796290916732.webp",
+    "video_url": "",
+    "duration_sec": 80.666,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-02"
+  },
+  {
     "author": "@camperaigg",
     "category": "video_gen",
     "category_name": "🎬 动画与视频生成",
