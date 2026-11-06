@@ -1,5 +1,30 @@
 [
   {
+    "id": "2117224839010459987",
+    "tweet_url": "https://x.com/chetaslua/status/2117224839010459987",
+    "author": "@chetaslua",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "零图像模型动画短片",
+    "summary": "用Python自写代码生成66秒动画，含音效与视觉，无外部素材。",
+    "title_en": "Zero Image Model Animated Short",
+    "summary_en": "Generated a 66-second animated short using self-written Python code without image models.",
+    "prompt": "未公开",
+    "tech_stack": [
+      "Python",
+      "HTML5"
+    ],
+    "demo_url": "",
+    "verification": "实测验证",
+    "preview_webp": "assets/previews/2117224839010459987.webp",
+    "video_url": "",
+    "duration_sec": 58.453,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-02"
+  },
+  {
     "id": "2117261864904351848",
     "tweet_url": "https://x.com/notjazii/status/2117261864904351848",
     "author": "@notjazii",

@@ -13,6 +13,7 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117224839010459987.webp" width="160" /> | — | 零图像模型动画短片 | @chetaslua | — | — | 58.453s | 2026-11-02 | [链接](https://x.com/chetaslua/status/2117224839010459987) |
 | <img src="assets/previews/2117261864904351848.webp" width="160" /> | — | Fable 5.5 战斗动画 | @notjazii | — | — | 30.046s | 2026-11-02 | [链接](https://x.com/notjazii/status/2117261864904351848) |
 | <img src="assets/previews/2117678536794296462.webp" width="160" /> | — | SVG版GTA6沙滩动画 | @imjustnewatai | — | — | 21.385s | 2026-11-03 | [链接](https://x.com/imjustnewatai/status/2117678536794296462) |
 | <img src="assets/previews/2117972258090357164.webp" width="160" /> | — | 生命之树生成动画 | @notjazii | — | — | 30s | 2026-11-04 | [链接](https://x.com/notjazii/status/2117972258090357164) |
@@ -29,6 +30,7 @@
 
 | 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117224839010459987.webp" width="220" /> | **零图像模型动画短片**<br/>用Python自写代码生成66秒动画，含音效与视觉，无外部素材。<br/>*By @chetaslua (2026-11-02)* | `Python` `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/chetaslua/status/2117224839010459987)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117261864904351848.webp" width="220" /> | **Fable 5.5 战斗动画**<br/>展示 Claude Fable 5.5 生成战斗动画的灵活能力，强调模型泛化潜力。<br/>*By @notjazii (2026-11-02)* | 🏷️ 灰度路由/传闻 | [🔗 原推文](https://x.com/notjazii/status/2117261864904351848)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117678536794296462.webp" width="220" /> | **SVG版GTA6沙滩动画**<br/>Fable 5.5用单文件SVG生成GTA风格沙滩动画，包含海浪、打斗与物理效果。<br/>*By @imjustnewatai (2026-11-03)* | `SVG` `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/imjustnewatai/status/2117678536794296462)<br/><details><summary>查看 Prompt</summary><pre>I asked Fable 5.5, to create an SVG animation of GTA 6 on a crowded, sunny beach. A German shepherd takes a shit in the sand, then the player gets into a fistfight with a nearby NPC. Include photorealistic graphics, realistic physics, ocean waves, animated beachgoers, a third-person camera, and a GTA-style minimap. Render everything in one self-contained SVG file.</pre></details> |
 | <img src="assets/previews/2117972258090357164.webp" width="220" /> | **生命之树生成动画**<br/>Fable 5.5 单次生成纯代码动画，展示复杂视觉创作能力。<br/>*By @notjazii (2026-11-04)* | 🏷️ 灰度路由/传闻 | [🔗 原推文](https://x.com/notjazii/status/2117972258090357164)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
