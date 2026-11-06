@@ -1,5 +1,27 @@
 [
   {
+    "id": "2117221957104239010",
+    "tweet_url": "https://x.com/notjazii/status/2117221957104239010",
+    "author": "@notjazii",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "一小时纯代码动画",
+    "summary": "仅用纯代码无外部素材生成高质量动画，一小时完成，效果惊艳。",
+    "title_en": "Pure Code Animation",
+    "summary_en": "Generated a stunning animation in pure code without external assets within an hour.",
+    "prompt": "make an animation that makes me feel like it’s agi",
+    "tech_stack": [],
+    "demo_url": "",
+    "verification": "灰度路由/传闻",
+    "preview_webp": "assets/previews/2117221957104239010.webp",
+    "video_url": "",
+    "duration_sec": 262.566,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-02"
+  },
+  {
     "id": "2117224839010459987",
     "tweet_url": "https://x.com/chetaslua/status/2117224839010459987",
     "author": "@chetaslua",
