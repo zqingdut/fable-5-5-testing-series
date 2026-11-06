@@ -13,6 +13,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Part | Title | Author | Time | Cost | Length | Date | Post |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117972258090357164.webp" width="160" /> | — | Life Tree Code Animation | @notjazii | — | — | 30s | 2026-11-04 | [Link](https://x.com/notjazii/status/2117972258090357164) |
 | <img src="assets/previews/2117700681867903169.webp" width="160" /> | — | One-Shot 42s Anime with Fable | @0xMovez | — | — | 42s | 2026-11-03 | [Link](https://x.com/0xmovez/status/2117700681867903169) |
 | <img src="assets/previews/2117169796290916732.webp" width="160" /> | — | Code-Based Video Beats AI Models | @chetaslua | — | — | 80.666s | 2026-11-02 | [Link](https://x.com/chetaslua/status/2117169796290916732) |
 | <img src="assets/previews/2117666378174050352.webp" width="160" /> | Initial | Clockwork Bird | @camperaigg | 1h54m | ~$20 | 60s | 2026-11-03 | [Link](https://x.com/camperaigg/status/2117666378174050352) |
@@ -26,6 +27,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Case & Summary | Stack & Status | Prompt / Links |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117972258090357164.webp" width="220" /> | **Life Tree Code Animation**<br/>Fable 5.5 generated a complex life tree animation with pure code in one shot.<br/>*By @notjazii (2026-11-04)* | 🏷️ 灰度路由/传闻 | [🔗 Original post](https://x.com/notjazii/status/2117972258090357164)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117700681867903169.webp" width="220" /> | **One-Shot 42s Anime with Fable**<br/>One-shot 42-second Three.js animation without video models, fully offline.<br/>*By @0xMovez (2026-11-03)* | `Three.js` `HTML5`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/0xmovez/status/2117700681867903169)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117169796290916732.webp" width="220" /> | **Code-Based Video Beats AI Models**<br/>A single prompt generates high-quality video, outperforming AI video models.<br/>*By @chetaslua (2026-11-02)* | 🏷️ 灰度路由/传闻 | [🔗 Original post](https://x.com/chetaslua/status/2117169796290916732)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117666378174050352.webp" width="220" /> | **Clockwork Bird**<br/>A fully vector clockwork bird assembles itself on camera, with an original waltz and purely math-synthesized sound effects throughout.<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `HyperFrames`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2117666378174050352)<br/><details><summary>View Prompt</summary><pre>一句提示词（未公开完整原文）</pre></details> |
