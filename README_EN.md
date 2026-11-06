@@ -13,6 +13,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Part | Title | Author | Time | Cost | Length | Date | Post |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117994730336252114.webp" width="160" /> | — | Best Voxel Pagoda Garden Yet | @legit_api | — | — | 108.083s | 2026-11-04 | [Link](https://x.com/legit_api/status/2117994730336252114) |
 | <img src="assets/previews/2118008142403649662.webp" width="160" /> | — | Animation Video Produced Entirely by Code | @devteamdrew | — | — | 100.083s | 2026-11-04 | [Link](https://x.com/devteamdrew/status/2118008142403649662) |
 | <img src="assets/previews/2116919129974411584.webp" width="160" /> | — | Fable 5.5 One-Shot Minecraft | @notjazii | — | — | 91.8s | 2026-11-01 | [Link](https://x.com/notjazii/status/2116919129974411584) |
 |  | — | The Last Page Ghibli-Style Short | @chetaslua | — | — | — | 2026-11-02 | [Link](https://x.com/chetaslua/status/2117224843661980093) |
@@ -50,6 +51,11 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 | <img src="assets/previews/2117966825048997914.webp" width="220" /> | **Howl's Moving Castle**<br/>A walking castle: full steam-engine-to-gait modeling with a mid-video shell cutaway.<br/>*By @camperaigg (2026-11-04)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2117966825048997914)<br/><details><summary>View Prompt</summary><pre>Make me Howl's moving castle and also show its internal machinery.</pre></details> |
 | <img src="assets/previews/2118002649929056373.webp" width="220" /> | **Mechanical Heart**<br/>A mechanical heart with a cutaway animation: twin-piston crankshaft and a heartbeat-synced score.<br/>*By @camperaigg (2026-11-04)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2118002649929056373)<br/><details><summary>View Prompt</summary><pre>Make a mechanical heart and show its insides, use blender.</pre></details> |
 | <img src="assets/previews/2118069524306284556.webp" width="220" /> | **Whale Breach**<br/>A whale breaches a cel-shaded ocean: 16.9M-particle fluid and a 1.09M-triangle whale built purely in code.<br/>*By @camperaigg (2026-11-04)* | `Claude Code`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2118069524306284556)<br/><details><summary>View Prompt</summary><pre>Make a whale breach a cel-shaded ocean.</pre></details> |
+## 📱 Interactive H5 & Apps
+
+| Preview | Case & Summary | Stack & Status | Prompt / Links |
+| :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117994730336252114.webp" width="220" /> | **Best Voxel Pagoda Garden Yet**<br/>An older Fable 5.5 checkpoint produced the best voxel pagoda garden attempt so far.<br/>*By @legit_api (2026-11-04)* | 🏷️ 实测验证 | [🔗 Original post](https://x.com/legit_api/status/2117994730336252114)<br/><details><summary>View Prompt</summary><pre>standard voxel pagoda garden prompt</pre></details> |
 ## 🎮 Games & Physics
 
 | Preview | Case & Summary | Stack & Status | Prompt / Links |

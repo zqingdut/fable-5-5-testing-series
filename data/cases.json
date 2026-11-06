@@ -1,5 +1,27 @@
 [
   {
+    "id": "2117994730336252114",
+    "tweet_url": "https://x.com/legit_api/status/2117994730336252114",
+    "author": "@legit_api",
+    "category": "interactive_h5",
+    "category_name": "📱 交互式 H5 与微应用",
+    "title": "体素宝塔庭院最佳生成",
+    "summary": "在旧版 Fable 5.5 检查点上生成体素宝塔庭院，效果为目前最佳。",
+    "title_en": "Best Voxel Pagoda Garden Yet",
+    "summary_en": "An older Fable 5.5 checkpoint produced the best voxel pagoda garden attempt so far.",
+    "prompt": "standard voxel pagoda garden prompt",
+    "tech_stack": [],
+    "demo_url": "",
+    "verification": "实测验证",
+    "preview_webp": "assets/previews/2117994730336252114.webp",
+    "video_url": "",
+    "duration_sec": 108.083,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-04"
+  },
+  {
     "id": "2118008142403649662",
     "tweet_url": "https://x.com/devteamdrew/status/2118008142403649662",
     "author": "@devteamdrew",
