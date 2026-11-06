@@ -13,6 +13,7 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117700681867903169.webp" width="160" /> | — | Fable 5.5 一次生成42秒动画 | @0xMovez | — | — | 42s | 2026-11-03 | [链接](https://x.com/0xmovez/status/2117700681867903169) |
 | <img src="assets/previews/2117169796290916732.webp" width="160" /> | — | 纯代码视频惊艳模型 | @chetaslua | — | — | 80.666s | 2026-11-02 | [链接](https://x.com/chetaslua/status/2117169796290916732) |
 | <img src="assets/previews/2117666378174050352.webp" width="160" /> | 初始 | Clockwork Bird（发条鸟） | @camperaigg | 1h54m | ~$20 | 60s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117666378174050352) |
 | <img src="assets/previews/2117694354685092255.webp" width="160" /> | Part 2 | Link's Master Sword | @camperaigg | 32min+ | $11.66 | 34s | 2026-11-03 | [链接](https://x.com/camperaigg/status/2117694354685092255) |
@@ -25,6 +26,7 @@
 
 | 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117700681867903169.webp" width="220" /> | **Fable 5.5 一次生成42秒动画**<br/>使用纯Three.js与代码渲染生成高质量动画，无需视频模型且离线运行。<br/>*By @0xMovez (2026-11-03)* | `Three.js` `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/0xmovez/status/2117700681867903169)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117169796290916732.webp" width="220" /> | **纯代码视频惊艳模型**<br/>用单一提示词生成高质量视频，效果优于AI视频模型。<br/>*By @chetaslua (2026-11-02)* | 🏷️ 灰度路由/传闻 | [🔗 原推文](https://x.com/chetaslua/status/2117169796290916732)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117666378174050352.webp" width="220" /> | **Clockwork Bird（发条鸟）**<br/>全矢量发条鸟自动组装成片，原创华尔兹与纯数学合成音效贯穿。<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `HyperFrames`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117666378174050352)<br/><details><summary>查看 Prompt</summary><pre>一句提示词（未公开完整原文）</pre></details> |
 | <img src="assets/previews/2117694354685092255.webp" width="220" /> | **Link's Master Sword**<br/>单脚本在 Blender 中建模大师之剑并自动成片，附原创管弦乐。<br/>*By @camperaigg (2026-11-03)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117694354685092255)<br/><details><summary>查看 Prompt</summary><pre>Build Link's Master Sword in Blender（后续追加“make a video of it”）</pre></details> |

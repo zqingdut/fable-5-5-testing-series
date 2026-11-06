@@ -1,5 +1,30 @@
 [
   {
+    "id": "2117700681867903169",
+    "tweet_url": "https://x.com/0xmovez/status/2117700681867903169",
+    "author": "@0xMovez",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "Fable 5.5 一次生成42秒动画",
+    "summary": "使用纯Three.js与代码渲染生成高质量动画，无需视频模型且离线运行。",
+    "title_en": "One-Shot 42s Anime with Fable",
+    "summary_en": "One-shot 42-second Three.js animation without video models, fully offline.",
+    "prompt": "未公开",
+    "tech_stack": [
+      "Three.js",
+      "HTML5"
+    ],
+    "demo_url": "",
+    "verification": "实测验证",
+    "preview_webp": "assets/previews/2117700681867903169.webp",
+    "video_url": "",
+    "duration_sec": 42,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-03"
+  },
+  {
     "id": "2117169796290916732",
     "tweet_url": "https://x.com/chetaslua/status/2117169796290916732",
     "author": "@chetaslua",
