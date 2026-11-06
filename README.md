@@ -13,6 +13,7 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2116919129974411584.webp" width="160" /> | — | Fable 5.5 一镜还原我的世界 | @notjazii | — | — | 91.8s | 2026-11-01 | [链接](https://x.com/notjazii/status/2116919129974411584) |
 |  | — | 《最后的一页》吉卜力风短片 | @chetaslua | — | — | — | 2026-11-02 | [链接](https://x.com/chetaslua/status/2117224843661980093) |
 | <img src="assets/previews/2117221957104239010.webp" width="160" /> | — | 一小时纯代码动画 | @notjazii | — | — | 262.566s | 2026-11-02 | [链接](https://x.com/notjazii/status/2117221957104239010) |
 | <img src="assets/previews/2117224839010459987.webp" width="160" /> | — | 零图像模型动画短片 | @chetaslua | — | — | 58.453s | 2026-11-02 | [链接](https://x.com/chetaslua/status/2117224839010459987) |
@@ -47,6 +48,11 @@
 | <img src="assets/previews/2117966825048997914.webp" width="220" /> | **Howl's Moving Castle**<br/>会行走的城堡：蒸汽机到四足步态全建模，中途开壳剖视。<br/>*By @camperaigg (2026-11-04)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2117966825048997914)<br/><details><summary>查看 Prompt</summary><pre>Make me Howl's moving castle and also show its internal machinery.</pre></details> |
 | <img src="assets/previews/2118002649929056373.webp" width="220" /> | **Mechanical Heart**<br/>机械心脏开壳动画：双活塞曲轴与心跳同步配乐。<br/>*By @camperaigg (2026-11-04)* | `Claude Code` `Blender`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2118002649929056373)<br/><details><summary>查看 Prompt</summary><pre>Make a mechanical heart and show its insides, use blender.</pre></details> |
 | <img src="assets/previews/2118069524306284556.webp" width="220" /> | **Whale Breach**<br/>1690 万粒子流体与 cel-shading 海洋，鲸鱼跃水成片。<br/>*By @camperaigg (2026-11-04)* | `Claude Code`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2118069524306284556)<br/><details><summary>查看 Prompt</summary><pre>Make a whale breach a cel-shaded ocean.</pre></details> |
+## 🎮 网页小游戏与物理模拟 (Games & Physics)
+
+| 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
+| :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2116919129974411584.webp" width="220" /> | **Fable 5.5 一镜还原我的世界**<br/>一次生成高细节 Minecraft，测试展现网页级游戏与场景还原能力。<br/>*By @notjazii (2026-11-01)* | `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/notjazii/status/2116919129974411584) / [🕹️ 在线试玩](https://model-tests.vercel.app/)<br/><details><summary>查看 Prompt</summary><pre>detailed minecraft one-shot</pre></details> |
 ## 详细记录
 ### 初始：Clockwork Bird（发条鸟）
 - **原帖**：[https://x.com/camperaigg/status/2117666378174050352](https://x.com/camperaigg/status/2117666378174050352) · **耗时**：1h54m · **成本**：~$20 · **时长**：60s- **提示词**：一句提示词（未公开完整原文）

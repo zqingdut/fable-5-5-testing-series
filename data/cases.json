@@ -1,5 +1,29 @@
 [
   {
+    "id": "2116919129974411584",
+    "tweet_url": "https://x.com/notjazii/status/2116919129974411584",
+    "author": "@notjazii",
+    "category": "game_physics",
+    "category_name": "🎮 网页小游戏与物理模拟",
+    "title": "Fable 5.5 一镜还原我的世界",
+    "summary": "一次生成高细节 Minecraft，测试展现网页级游戏与场景还原能力。",
+    "title_en": "Fable 5.5 One-Shot Minecraft",
+    "summary_en": "Fable 5.5 generates a highly detailed Minecraft-style web scene in one shot.",
+    "prompt": "detailed minecraft one-shot",
+    "tech_stack": [
+      "HTML5"
+    ],
+    "demo_url": "https://model-tests.vercel.app/",
+    "verification": "实测验证",
+    "preview_webp": "assets/previews/2116919129974411584.webp",
+    "video_url": "",
+    "duration_sec": 91.8,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-01"
+  },
+  {
     "id": "2117224843661980093",
     "tweet_url": "https://x.com/chetaslua/status/2117224843661980093",
     "author": "@chetaslua",
