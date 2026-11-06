@@ -1,5 +1,27 @@
 [
   {
+    "id": "2117261864904351848",
+    "tweet_url": "https://x.com/notjazii/status/2117261864904351848",
+    "author": "@notjazii",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "Fable 5.5 战斗动画",
+    "summary": "展示 Claude Fable 5.5 生成战斗动画的灵活能力，强调模型泛化潜力。",
+    "title_en": "Fable 5.5 Combat Animation",
+    "summary_en": "Highlights Claude Fable 5.5’s flexible ability to generate combat animations and its broad potential.",
+    "prompt": "未公开",
+    "tech_stack": [],
+    "demo_url": "",
+    "verification": "灰度路由/传闻",
+    "preview_webp": "assets/previews/2117261864904351848.webp",
+    "video_url": "",
+    "duration_sec": 30.046,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-02"
+  },
+  {
     "id": "2117678536794296462",
     "tweet_url": "https://x.com/imjustnewatai/status/2117678536794296462",
     "author": "@imjustnewatai",
