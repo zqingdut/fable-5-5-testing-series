@@ -27,6 +27,7 @@ them only deterministic whole-post candidates are used).
 import argparse
 import json
 import os
+import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -139,9 +140,9 @@ def main() -> int:
         save_cases(cases)
         print(f"已写入 {CASES_FILE}（处理 {changed} 条）")
         if args.rebuild_readme:
-            import build_readme
-
-            build_readme.render()
+            subprocess.run(
+                [sys.executable, "scripts/build_readme.py"], check=True
+            )
     return 0
 
 
