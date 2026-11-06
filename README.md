@@ -13,6 +13,7 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117678536794296462.webp" width="160" /> | — | SVG版GTA6沙滩动画 | @imjustnewatai | — | — | 21.385s | 2026-11-03 | [链接](https://x.com/imjustnewatai/status/2117678536794296462) |
 | <img src="assets/previews/2117972258090357164.webp" width="160" /> | — | 生命之树生成动画 | @notjazii | — | — | 30s | 2026-11-04 | [链接](https://x.com/notjazii/status/2117972258090357164) |
 | <img src="assets/previews/2117700681867903169.webp" width="160" /> | — | Fable 5.5 一次生成42秒动画 | @0xMovez | — | — | 42s | 2026-11-03 | [链接](https://x.com/0xmovez/status/2117700681867903169) |
 | <img src="assets/previews/2117169796290916732.webp" width="160" /> | — | 纯代码视频惊艳模型 | @chetaslua | — | — | 80.666s | 2026-11-02 | [链接](https://x.com/chetaslua/status/2117169796290916732) |
@@ -27,6 +28,7 @@
 
 | 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117678536794296462.webp" width="220" /> | **SVG版GTA6沙滩动画**<br/>Fable 5.5用单文件SVG生成GTA风格沙滩动画，包含海浪、打斗与物理效果。<br/>*By @imjustnewatai (2026-11-03)* | `SVG` `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/imjustnewatai/status/2117678536794296462)<br/><details><summary>查看 Prompt</summary><pre>I asked Fable 5.5, to create an SVG animation of GTA 6 on a crowded, sunny beach. A German shepherd takes a shit in the sand, then the player gets into a fistfight with a nearby NPC. Include photorealistic graphics, realistic physics, ocean waves, animated beachgoers, a third-person camera, and a GTA-style minimap. Render everything in one self-contained SVG file.</pre></details> |
 | <img src="assets/previews/2117972258090357164.webp" width="220" /> | **生命之树生成动画**<br/>Fable 5.5 单次生成纯代码动画，展示复杂视觉创作能力。<br/>*By @notjazii (2026-11-04)* | 🏷️ 灰度路由/传闻 | [🔗 原推文](https://x.com/notjazii/status/2117972258090357164)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117700681867903169.webp" width="220" /> | **Fable 5.5 一次生成42秒动画**<br/>使用纯Three.js与代码渲染生成高质量动画，无需视频模型且离线运行。<br/>*By @0xMovez (2026-11-03)* | `Three.js` `HTML5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/0xmovez/status/2117700681867903169)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117169796290916732.webp" width="220" /> | **纯代码视频惊艳模型**<br/>用单一提示词生成高质量视频，效果优于AI视频模型。<br/>*By @chetaslua (2026-11-02)* | 🏷️ 灰度路由/传闻 | [🔗 原推文](https://x.com/chetaslua/status/2117169796290916732)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |

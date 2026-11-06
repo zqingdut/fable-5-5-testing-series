@@ -1,5 +1,30 @@
 [
   {
+    "id": "2117678536794296462",
+    "tweet_url": "https://x.com/imjustnewatai/status/2117678536794296462",
+    "author": "@imjustnewatai",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "SVG版GTA6沙滩动画",
+    "summary": "Fable 5.5用单文件SVG生成GTA风格沙滩动画，包含海浪、打斗与物理效果。",
+    "title_en": "GTA 6 SVG Beach Animation",
+    "summary_en": "Fable 5.5 generated a self-contained SVG animation of GTA 6 beach scenes with physics.",
+    "prompt": "I asked Fable 5.5, to create an SVG animation of GTA 6 on a crowded, sunny beach. A German shepherd takes a shit in the sand, then the player gets into a fistfight with a nearby NPC. Include photorealistic graphics, realistic physics, ocean waves, animated beachgoers, a third-person camera, and a GTA-style minimap. Render everything in one self-contained SVG file.",
+    "tech_stack": [
+      "SVG",
+      "HTML5"
+    ],
+    "demo_url": "",
+    "verification": "实测验证",
+    "preview_webp": "assets/previews/2117678536794296462.webp",
+    "video_url": "",
+    "duration_sec": 21.385,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-03"
+  },
+  {
     "id": "2117972258090357164",
     "tweet_url": "https://x.com/notjazii/status/2117972258090357164",
     "author": "@notjazii",

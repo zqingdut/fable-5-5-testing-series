@@ -13,6 +13,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Part | Title | Author | Time | Cost | Length | Date | Post |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117678536794296462.webp" width="160" /> | — | GTA 6 SVG Beach Animation | @imjustnewatai | — | — | 21.385s | 2026-11-03 | [Link](https://x.com/imjustnewatai/status/2117678536794296462) |
 | <img src="assets/previews/2117972258090357164.webp" width="160" /> | — | Life Tree Code Animation | @notjazii | — | — | 30s | 2026-11-04 | [Link](https://x.com/notjazii/status/2117972258090357164) |
 | <img src="assets/previews/2117700681867903169.webp" width="160" /> | — | One-Shot 42s Anime with Fable | @0xMovez | — | — | 42s | 2026-11-03 | [Link](https://x.com/0xmovez/status/2117700681867903169) |
 | <img src="assets/previews/2117169796290916732.webp" width="160" /> | — | Code-Based Video Beats AI Models | @chetaslua | — | — | 80.666s | 2026-11-02 | [Link](https://x.com/chetaslua/status/2117169796290916732) |
@@ -27,6 +28,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Case & Summary | Stack & Status | Prompt / Links |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117678536794296462.webp" width="220" /> | **GTA 6 SVG Beach Animation**<br/>Fable 5.5 generated a self-contained SVG animation of GTA 6 beach scenes with physics.<br/>*By @imjustnewatai (2026-11-03)* | `SVG` `HTML5`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/imjustnewatai/status/2117678536794296462)<br/><details><summary>View Prompt</summary><pre>I asked Fable 5.5, to create an SVG animation of GTA 6 on a crowded, sunny beach. A German shepherd takes a shit in the sand, then the player gets into a fistfight with a nearby NPC. Include photorealistic graphics, realistic physics, ocean waves, animated beachgoers, a third-person camera, and a GTA-style minimap. Render everything in one self-contained SVG file.</pre></details> |
 | <img src="assets/previews/2117972258090357164.webp" width="220" /> | **Life Tree Code Animation**<br/>Fable 5.5 generated a complex life tree animation with pure code in one shot.<br/>*By @notjazii (2026-11-04)* | 🏷️ 灰度路由/传闻 | [🔗 Original post](https://x.com/notjazii/status/2117972258090357164)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117700681867903169.webp" width="220" /> | **One-Shot 42s Anime with Fable**<br/>One-shot 42-second Three.js animation without video models, fully offline.<br/>*By @0xMovez (2026-11-03)* | `Three.js` `HTML5`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/0xmovez/status/2117700681867903169)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117169796290916732.webp" width="220" /> | **Code-Based Video Beats AI Models**<br/>A single prompt generates high-quality video, outperforming AI video models.<br/>*By @chetaslua (2026-11-02)* | 🏷️ 灰度路由/传闻 | [🔗 Original post](https://x.com/chetaslua/status/2117169796290916732)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
