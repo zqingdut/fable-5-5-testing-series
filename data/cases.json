@@ -1,5 +1,32 @@
 [
   {
+    "id": "2117381015069212910",
+    "tweet_url": "https://x.com/ChrisGPT/status/2117381015069212910",
+    "author": "@ChrisGPT",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "一句话生成全流程动画",
+    "summary": "单提示词生成动画，自建渲染器与音效，无需GPU与外部素材。",
+    "title_en": "One-Prompt Animation With Self-Written Renderer",
+    "summary_en": "A single prompt produced a fully animated short with custom renderer, hand-painted textures and synthesized audio, no GPU or external assets.",
+    "prompt": "未公开",
+    "tech_stack": [
+      "自研渲染器",
+      "程序化纹理绘制",
+      "2s 逐帧动画",
+      "音效合成"
+    ],
+    "demo_url": "",
+    "verification": "实测验证",
+    "preview_webp": "assets/previews/2117381015069212910.webp",
+    "video_url": "",
+    "duration_sec": 9,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-02"
+  },
+  {
     "id": "2117978323343360245",
     "tweet_url": "https://x.com/zodchiii/status/2117978323343360245",
     "author": "@zodchiii",

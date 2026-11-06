@@ -13,6 +13,7 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117381015069212910.webp" width="160" /> | — | 一句话生成全流程动画 | @ChrisGPT | — | — | 9s | 2026-11-02 | [链接](https://x.com/ChrisGPT/status/2117381015069212910) |
 | <img src="assets/previews/2117978323343360245.webp" width="160" /> | — | 40分钟做出GTA6 | @zodchiii | — | — | 50.533s | 2026-11-04 | [链接](https://x.com/zodchiii/status/2117978323343360245) |
 | <img src="assets/previews/2117987052419428576.webp" width="160" /> | — | 纯代码生成83秒动画 | @0xMovez | — | — | 83s | 2026-11-04 | [链接](https://x.com/0xMovez/status/2117987052419428576) |
 | <img src="assets/previews/2118045185972314232.webp" width="160" /> | — | 末日机器人动画一键生成 | @ka1manov | — | — | 42s | 2026-11-04 | [链接](https://x.com/ka1manov/status/2118045185972314232) |
@@ -40,6 +41,7 @@
 
 | 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2117381015069212910.webp" width="220" /> | **一句话生成全流程动画**<br/>单提示词生成动画，自建渲染器与音效，无需GPU与外部素材。<br/>*By @ChrisGPT (2026-11-02)* | `自研渲染器` `程序化纹理绘制` `2s 逐帧动画` `音效合成`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/ChrisGPT/status/2117381015069212910)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2117987052419428576.webp" width="220" /> | **纯代码生成83秒动画**<br/>单HTML离线运行，39镜头1992帧，含合成音效<br/>*By @0xMovez (2026-11-04)* | `Three.js` `HTML5` `Web Audio API`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/0xMovez/status/2117987052419428576)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2118045185972314232.webp" width="220" /> | **末日机器人动画一键生成**<br/>单条提示词直出42秒末日机器人动画，效果超越90%视频模型。<br/>*By @ka1manov (2026-11-04)* | `Fable 5.5`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/ka1manov/status/2118045185972314232)<br/><details><summary>查看 Prompt</summary><pre>Make a video animation of apocalyptic worlds with robots</pre></details> |
 | <img src="assets/previews/2118246310981910811.webp" width="220" /> | **穿越木星核心一镜到底**<br/>单提示生成46秒木星穿越一镜到底，自写流体与配乐。<br/>*By @camperaigg (2026-11-05)* | `three.js` `Python`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2118246310981910811)<br/><details><summary>查看 Prompt</summary><pre>Fly a camera straight through Jupiter's core.</pre></details> |
