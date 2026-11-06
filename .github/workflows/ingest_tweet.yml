@@ -16,8 +16,6 @@ permissions:
   contents: write
   issues: write
 
-concurrency:
-  group: ingest-tweet
   cancel-in-progress: false
 
 jobs:
@@ -87,8 +85,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/cases.json assets/previews/ README.md README_EN.md
           git diff --staged --quiet || git commit -m "feat(case): auto-ingest tweet ${{ env.TWEET_URL }}"
-          git pull --rebase origin main
-          git push
+          ok=0
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then ok=1; break; fi
+            echo "push 冲突，10 秒后重试 ($i/5)"; sleep 10
+          done
+          [ "$ok" = "1" ] || { echo "推送失败"; exit 1; }
 
       - name: Comment and Close Issue
         if: github.event_name == 'issues' && env.TWEET_URL != ''
