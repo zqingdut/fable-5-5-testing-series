@@ -13,6 +13,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Part | Title | Author | Time | Cost | Length | Date | Post |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2119052253982306393.webp" width="160" /> | — | Riding a Lightning Bolt Simulation | @camperaigg | — | — | 27.583s | 2026-11-07 | [Link](https://x.com/camperaigg/status/2119052253982306393) |
 | <img src="assets/previews/2118363287738073343.webp" width="160" /> | — | 83-Second Anime Short Rendered Entirely in Code | @zodchiii | — | — | 83.2s | 2026-11-05 | [Link](https://x.com/zodchiii/status/2118363287738073343) |
 | <img src="assets/previews/2118410521363845534.webp" width="160" /> | — | 6-Frame Axe GIF to 3D Animation | @camperaigg | — | — | 21.033s | 2026-11-05 | [Link](https://x.com/camperaigg/status/2118410521363845534) |
 | <img src="assets/previews/2118415577299460432.webp" width="160" /> | — | Rainbow Jelly Self-Healing Test | @0xRhinoX | — | — | 37.4s | 2026-11-05 | [Link](https://x.com/0xRhinoX/status/2118415577299460432) |
@@ -76,6 +77,7 @@ An index of single-prompt animation, 3D and interactive tests of **Claude Fable 
 
 | Preview | Case & Summary | Stack & Status | Prompt / Links |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2119052253982306393.webp" width="220" /> | **Riding a Lightning Bolt Simulation**<br/>One prompt produced a 28-second 1080p60 lightning simulation with camera ride and synthesized sound.<br/>*By @camperaigg (2026-11-07)* | `Three.js` `Taichi`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2119052253982306393)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2118363287738073343.webp" width="220" /> | **83-Second Anime Short Rendered Entirely in Code**<br/>8 parallel agents, pure Three.js, 1,996 code-rendered frames, synthesized score in a single 2 MB offline HTML file.<br/>*By @zodchiii (2026-11-05)* | `Three.js` `HTML5` `Web Audio API`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/zodchiii/status/2118363287738073343)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2118410521363845534.webp" width="220" /> | **6-Frame Axe GIF to 3D Animation**<br/>Rebuilt a 6-frame axe GIF into a 3D swing, auto-fixing perspective, motion trails, and materials, then rendered the Blender model.<br/>*By @camperaigg (2026-11-05)* | `Blender` `Claude Code`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2118410521363845534)<br/><details><summary>View Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2118673822459281765.webp" width="220" /> | **Fable 5.5 Blender Basketball Physics Simulation**<br/>Fable 5.5 autonomously built a Blender physics solver, simulated and rendered a basketball drop matching FIBA rebound specs.<br/>*By @camperaigg (2026-11-06)* | `Blender` `Cycles` `Blender Python API` `Claude Code`<br/>🏷️ 实测验证 | [🔗 Original post](https://x.com/camperaigg/status/2118673822459281765)<br/><details><summary>View Prompt</summary><pre>simulate a basketball drop in Blender</pre></details> |

@@ -13,6 +13,7 @@
 
 | 预览 | Part | 标题 | 作者 | 耗时 | 成本 | 时长 | 日期 | 原帖 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2119052253982306393.webp" width="160" /> | — | 闪电劈落全流程模拟 | @camperaigg | — | — | 27.583s | 2026-11-07 | [链接](https://x.com/camperaigg/status/2119052253982306393) |
 | <img src="assets/previews/2118363287738073343.webp" width="160" /> | — | 纯代码生成83秒动画短片 | @zodchiii | — | — | 83.2s | 2026-11-05 | [链接](https://x.com/zodchiii/status/2118363287738073343) |
 | <img src="assets/previews/2118410521363845534.webp" width="160" /> | — | 6帧GIF生成3D斧击动画 | @camperaigg | — | — | 21.033s | 2026-11-05 | [链接](https://x.com/camperaigg/status/2118410521363845534) |
 | <img src="assets/previews/2118415577299460432.webp" width="160" /> | — | 彩虹果冻自愈实测 | @0xRhinoX | — | — | 37.4s | 2026-11-05 | [链接](https://x.com/0xRhinoX/status/2118415577299460432) |
@@ -76,6 +77,7 @@
 
 | 预览 | 案例名称与摘要 | 技术栈 & 状态 | 原始 Prompt / 链接 |
 | :--- | :--- | :--- | :--- |
+| <img src="assets/previews/2119052253982306393.webp" width="220" /> | **闪电劈落全流程模拟**<br/>单提示词模拟云地闪电全过程，28秒一镜到底1080p60，含镜头与音效。<br/>*By @camperaigg (2026-11-07)* | `Three.js` `Taichi`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2119052253982306393)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2118363287738073343.webp" width="220" /> | **纯代码生成83秒动画短片**<br/>8个Agent并行，纯Three.js渲染1996帧，单文件离线播放<br/>*By @zodchiii (2026-11-05)* | `Three.js` `HTML5` `Web Audio API`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/zodchiii/status/2118363287738073343)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2118410521363845534.webp" width="220" /> | **6帧GIF生成3D斧击动画**<br/>6帧GIF重建为3D挥斧动画，自动修正透视、轨迹与材质并展示Blender模型。<br/>*By @camperaigg (2026-11-05)* | `Blender` `Claude Code`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2118410521363845534)<br/><details><summary>查看 Prompt</summary><pre>未公开</pre></details> |
 | <img src="assets/previews/2118673822459281765.webp" width="220" /> | **Fable 5.5篮球物理模拟**<br/>Fable 5.5 自写物理求解器，渲染篮球落地动画，反弹高度符合 FIBA 规范。<br/>*By @camperaigg (2026-11-06)* | `Blender` `Cycles` `Blender Python API` `Claude Code`<br/>🏷️ 实测验证 | [🔗 原推文](https://x.com/camperaigg/status/2118673822459281765)<br/><details><summary>查看 Prompt</summary><pre>simulate a basketball drop in Blender</pre></details> |

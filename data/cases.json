@@ -1,5 +1,31 @@
 [
   {
+    "id": "2119052253982306393",
+    "tweet_url": "https://x.com/camperaigg/status/2119052253982306393",
+    "author": "@camperaigg",
+    "category": "video_gen",
+    "category_name": "🎬 动画与视频生成",
+    "title": "闪电劈落全流程模拟",
+    "summary": "单提示词模拟云地闪电全过程，28秒一镜到底1080p60，含镜头与音效。",
+    "title_en": "Riding a Lightning Bolt Simulation",
+    "summary_en": "One prompt produced a 28-second 1080p60 lightning simulation with camera ride and synthesized sound.",
+    "prompt": "未公开",
+    "tech_stack": [
+      "Three.js",
+      "Taichi"
+    ],
+    "demo_url": "",
+    "verification": "实测验证",
+    "preview_webp": "assets/previews/2119052253982306393.webp",
+    "video_url": "",
+    "duration_sec": 27.583,
+    "work_time": "",
+    "cost_usd": "",
+    "highlights": [],
+    "created_at": "2026-11-07",
+    "prompt_source": ""
+  },
+  {
     "id": "2118363287738073343",
     "tweet_url": "https://x.com/zodchiii/status/2118363287738073343",
     "author": "@zodchiii",
