@@ -16,6 +16,10 @@ permissions:
   contents: write
   issues: write
 
+concurrency:
+  group: ingest-issue-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
 jobs:
   process-and-commit:
     if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'submission')
@@ -32,7 +36,7 @@ jobs:
 
       - name: Install System & Python Dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y ffmpeg
+          if command -v ffmpeg >/dev/null 2>&1; then echo "ffmpeg 已预装，跳过 apt 安装"; else sudo apt-get update && sudo apt-get install -y ffmpeg; fi
           pip install -r requirements.txt
 
       # Issue body is passed through an environment variable (never inlined
